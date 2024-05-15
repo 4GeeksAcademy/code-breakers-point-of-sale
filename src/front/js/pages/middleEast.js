@@ -356,10 +356,10 @@ let coffee = {
   
 export const MiddleEast = () => {
     return (
-        coffee["Middle East"].map((current) => {
-            return <CoffeeCard name={current.name} price={current.price} key={current.id} />;
-        })
-    );
+      coffee["Middle East"].map((current) => {
+      return <CoffeeCard name={current.name} price={current.price} key={current.id} />;
+  })
+);
 }
 
   

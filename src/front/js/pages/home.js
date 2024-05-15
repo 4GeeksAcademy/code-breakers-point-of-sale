@@ -4,7 +4,6 @@ import RegionCard from "../component/RegionCard";
 import { Grid, Typography, } from "@mui/material"; // Import Material-UI components
 import "../../styles/home.css";
 import  {Navbar}  from "../component/navbar";
-import {blueGrey} from '@mui/material/colors';
 let coffee = {
     'Central America': [
       {
@@ -376,7 +375,7 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
   return (
     <>
-      <Navbar /> {/* Include the Navbar component */}
+      <Navbar /> 
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <div className="mt-5">
@@ -388,7 +387,6 @@ export const Home = () => {
         <Grid item xs={6}>
           <div className="mt-5">
             <Typography variant="h1">Regions:</Typography>
-            {/* Assuming RegionCard is defined elsewhere */}
             <RegionCard />
           </div>
         </Grid>

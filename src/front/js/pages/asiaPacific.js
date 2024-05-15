@@ -364,27 +364,28 @@ export const AsiaPacific = () => {
   const total = selectedCoffees.reduce((acc, curr) => acc + curr.price, 0);
 
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ flex: 1 }}>
-        <Typography variant="h1">Orders:</Typography>
-        <ul>
-          {selectedCoffees.map((coffee, index) => (
-            <li key={index}>{coffee.name} - ${coffee.price}</li>
-          ))}
-        </ul>
-        <Typography variant="h3">Total: ${total.toFixed(2)}</Typography>
-      </div>
-      <div style={{ flex: 1 }}>
-        <Typography variant="h1">Coffee:</Typography>
-        {coffee["Asia Pacific"].map((current) => (
-          <CoffeeCard
-            name={current.name}
-            price={current.price}
-            key={current.id}
-            handleClick={handleClick}
-          />
-        ))}
-      </div>
-    </div>
+    <div style={{ display: "flex", paddingTop: '64px' }}>
+  {/* Assuming 64px is the height of your navbar */}
+  <div style={{ flex: 1 }}>
+    <Typography variant="h1">Orders:</Typography>
+    <ul>
+      {selectedCoffees.map((coffee, index) => (
+        <li key={index}>{coffee.name} - ${coffee.price}</li>
+      ))}
+    </ul>
+    <Typography variant="h3">Total: ${total.toFixed(2)}</Typography>
+  </div>
+  <div style={{ flex: 1 }}>
+    <Typography variant="h1">Coffee:</Typography>
+    {coffee["Asia Pacific"].map((current) => (
+      <CoffeeCard
+        name={current.name}
+        price={current.price}
+        key={current.id}
+        handleClick={handleClick}
+      />
+    ))}
+  </div>
+</div>
   );
 };
