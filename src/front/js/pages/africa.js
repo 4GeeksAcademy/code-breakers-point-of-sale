@@ -28,7 +28,7 @@ export const Africa = () => {
   return (
     <div style={{ display: "flex", paddingTop: '64px', paddingLeft: '16px', paddingRight: '16px' }}>
       <div style={{ flex: 1, backgroundColor: "lightgray", padding: "20px", paddingRight: '16px', display: 'flex', flexDirection: 'column', paddingLeft: '16px' }}>
-        <Typography variant="h1">Orders:</Typography>
+        <Typography variant="h1">Orders</Typography>
         <ul style={{ padding: 0, listStyle: 'none', flex: 1, marginTop: '16px' }}>
           {store.order.items.map((coffee, index) => (
             <li key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
@@ -61,7 +61,7 @@ export const Africa = () => {
       </div>
 
       <div style={{ flex: 1, paddingLeft: '16px' }}>
-        <Typography variant="h1">Coffee:</Typography>
+        <Typography variant="h1">Coffee</Typography>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
           {store.Africa && store.Africa.map((current) => (
             <div key={current.id} style={{ flex: "1 0 calc(50% - 16px)" }}>

@@ -20,7 +20,7 @@ export const Regions = () => {
   return (
     <div style={{ display: "flex", paddingTop: '64px', paddingLeft: '16px', paddingRight: '16px' }}>
       <div style={{ flex: 1, backgroundColor: "lightgray", padding: "20px", paddingRight: '16px', display: 'flex', flexDirection: 'column', paddingLeft: '16px' }}>
-        <Typography variant="h1">Orders:</Typography>
+        <Typography variant="h1">Orders</Typography>
         <ul style={{ padding: 0, listStyle: 'none', flex: 1, marginTop: '16px' }}>
           {store.order.items.map((coffee, index) => (
             <li key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
@@ -44,7 +44,7 @@ export const Regions = () => {
       </div>
 
       <div style={{ flex: 1, paddingLeft: '16px' }}>
-        <Typography variant="h1">Regions:</Typography>
+        <Typography variant="h1">Regions</Typography>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", marginTop: "16px" }}>
           {Object.keys(store)
             .filter((region) => region !== 'order' && region !== 'user')
